@@ -95,7 +95,7 @@ INSTALLATION
 ### Install from an Archive File
 
 Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
-a directory named `practical` that is directly under the Web root.
+a directory named `practical` or your app name, that is directly under the Web root.
 
 Then follow the instructions given in "GETTING STARTED".
 
