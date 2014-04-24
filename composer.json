@@ -2,7 +2,7 @@
 	"name": "kartik-v/yii2-app-practical",
 	"description": "Yii 2 Practical Application Template (based on advanced)",
 	"keywords": ["yii2", "framework", "practical", "application template"],
-	"homepage": "http://www.yiiframework.com/",
+	"homepage": "http://demos.krajee.com/app-practical",
 	"type": "project",
 	"license": "BSD-3-Clause",
     "authors": [
