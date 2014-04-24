@@ -47,7 +47,8 @@ DIRECTORY STRUCTURE
 
 ```
 ROOT
-    /                   contains the frontend entry script and Web resources
+    /                   contains the frontend entry script and web resources
+    /assets             contains the frontend web assets
 common
 	config/				contains shared configurations
 	mail/				contains view files for e-mails
