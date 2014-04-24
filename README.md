@@ -93,7 +93,7 @@ INSTALLATION
 
 ### Install from an Archive File
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
+Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
 a directory named `practical` that is directly under the Web root.
 
 Then follow the instructions given in "GETTING STARTED".
@@ -101,13 +101,14 @@ Then follow the instructions given in "GETTING STARTED".
 
 ### Install via Composer
 
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/). 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
 You can then install the application using the following command:
 
 ~~~
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-practical practical
+php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical practical
 ~~~
 
 
