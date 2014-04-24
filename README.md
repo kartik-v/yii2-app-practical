@@ -3,11 +3,11 @@ Yii 2 Practical Application Template
 
 Yii 2 Practical Application Template is a skeleton Yii 2 application based on the 
 [yii2-advanced template](https://github.com/yiisoft/yii2-app-advanced/) best for 
-developing complex Web applications with multiple tiers.
+developing complex Web applications with multiple tiers. The template allows a 
+**practical** method to directly access the frontend from the app root.
 
 The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application. The template allows a **practical** method to directly 
-access the frontend from the app root.
+is a separate Yii application.
 
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
@@ -38,8 +38,8 @@ this way:
 http://domain/app
 ```
 
-All other aspects of the advanced app remain the same. The `common`, `backend` and `console` will remain as is.
-The frontend config, assets, models, controllers, views, widgets and components, will still reside within 
+All other aspects of the app configuration remain the same as yii2-advanced app. The `common`, `backend` and `console` 
+will remain as is. The frontend config, assets, models, controllers, views, widgets and components, will still reside within 
 the `frontend` directory. It is just the web access that is moved out to app root.
 
 DIRECTORY STRUCTURE
@@ -86,7 +86,7 @@ environments/			contains environment-based overrides
 REQUIREMENTS
 ------------
 
-The minimum requirement by this application template that your Web server supports PHP 5.4.0.
+The minimum requirement by this application template is that your Web server supports PHP 5.4.0.
 
 
 INSTALLATION
