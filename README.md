@@ -102,7 +102,7 @@ Then follow the instructions given in "GETTING STARTED".
 
 ### Install via Composer
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/). 
+The preferred way to install this application template is through [composer](http://getcomposer.org/download/). 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
