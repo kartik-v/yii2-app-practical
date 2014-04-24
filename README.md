@@ -38,7 +38,7 @@ this way:
 http://domain/app
 ```
 
-All other aspects of the app configuration remain the same as yii2-advanced app. The `common`, `backend` and `console` 
+All other aspects of the app configuration remain the same as the **yii2-advanced** app. The `common`, `backend` and `console` 
 will remain as is. The frontend config, assets, models, controllers, views, widgets and components, will still reside within 
 the `frontend` directory. It is just the web access that is moved out to app root.
 
@@ -126,6 +126,8 @@ the installed application. You only need to do these once for all.
 
 - for frontend `/path/to/yii-application/` and using the URL `http://frontend/`
 - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
+
+> FRONTEND ACCESS: Just navigate to <code>http://yourdomain/practical</code> (where <code>practical</code> is your app name folder under web root).
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
