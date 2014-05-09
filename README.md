@@ -22,7 +22,7 @@ frontend by:
 http://domain/app/frontend/web
 ```
 
-However, in many **practical** scenarios (especially on single domain hosts) one 
+However, in many **practical** scenarios (especially on shared and single domain hosts) one 
 would want their users to directly access frontend as:
 
 ```

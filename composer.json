@@ -51,7 +51,7 @@
 			"console/migrations",
 
 			"frontend/runtime",
-			"frontend/web/assets"
+			"assets"
 		]
 	}
 }
