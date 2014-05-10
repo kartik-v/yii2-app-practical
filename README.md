@@ -97,6 +97,10 @@ INSTALLATION
 Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
 a directory named `practical` or your app name, that is directly under the Web root.
 
+> Note: When using a archive file method, the vendor folder is not automatically created. You must 
+ extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/tree/master/apps/advanced/vendor).
+ Then you must copy this folder directly under the app root (i.e. `practical` directory).
+ 
 Then follow the instructions given in "GETTING STARTED".
 
 
