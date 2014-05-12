@@ -48,7 +48,7 @@ DIRECTORY STRUCTURE
 ```
 ROOT
     /                   contains the frontend entry script and web resources
-    /assets             contains the frontend web assets
+    /assets             contains the frontend web runtime assets
 common
 	config/				contains shared configurations
 	mail/				contains view files for e-mails
@@ -92,18 +92,6 @@ The minimum requirement by this application template is that your Web server sup
 INSTALLATION
 ------------
 
-### Install from an Archive File
-
-Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
-a directory named `practical` or your app name, that is directly under the Web root.
-
-> Note: When using a archive file method, the vendor folder is not automatically created. You must 
- extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0-beta/yii-advanced-app-2.0.0-beta.tgz).
- Then you must copy this folder directly under the app root (i.e. `practical` directory).
- 
-After this is complete, follow the instructions given in "GETTING STARTED".
-
-
 ### Install via Composer
 
 The preferred way to install this application template is through [composer](http://getcomposer.org/download/). 
@@ -115,6 +103,18 @@ You can then install the application using the following command:
 ~~~
 php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical practical
 ~~~
+
+### Install from an Archive File
+
+Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
+a directory named `practical` or your app name, that is directly under the Web root.
+
+> Note: When using a archive file method, the vendor folder is not automatically created. You must 
+ extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0-beta/yii-advanced-app-2.0.0-beta.tgz).
+ Then you must copy this folder directly under the app root (i.e. `practical` directory).
+ 
+After this is complete, follow the instructions given in "GETTING STARTED".
+
 
 
 GETTING STARTED
