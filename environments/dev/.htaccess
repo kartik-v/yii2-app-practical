@@ -35,3 +35,12 @@
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+
+# Settings to hide index.php and ensure pretty urls
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
