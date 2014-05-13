@@ -42,6 +42,14 @@ All other aspects of the app configuration remain the same as the **yii2-advance
 will remain as is. The frontend config, assets, models, controllers, views, widgets and components, will still reside within 
 the `frontend` directory. It is just the web access that is moved out to app root.
 
+SOME KEY ADDITIONS
+-------------------
+
+1. The template has some security preconfigured for users with Apache web servers. It has a default `.htaccess` security configuration setup.
+2. The template has prettyUrl enabled by default and the changes have been made to `.htaccess` as well as `urlManager`
+   component config in the common config directory.
+
+
 DIRECTORY STRUCTURE
 -------------------
 
