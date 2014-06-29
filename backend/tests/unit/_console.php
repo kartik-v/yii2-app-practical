@@ -8,7 +8,14 @@ return yii\helpers\ArrayHelper::merge(
     [
         'components' => [
             'db' => [
-                'dsn' => 'mysql:host=localhost;dbname=yii2_practical_unit',
+                'dsn' => 'mysql:host=localhost;dbname=yii2_advanced_unit',
+            ],
+        ],
+        'controllerMap' => [
+            'fixture' => [
+                'class' => 'yii\faker\FixtureController',
+                'fixtureDataPath' => '@backend/tests/unit/fixtures/data',
+                'templatePath' => '@commmon/tests/templates/fixtures'
             ],
         ],
     ]

@@ -1,8 +1,8 @@
 <?php
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
- * @project yii2-app-practical
- * @version 1.0.0
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
  */
 
 namespace frontend\assets;
@@ -10,13 +10,13 @@ namespace frontend\assets;
 use yii\web\AssetBundle;
 
 /**
- * @author Kartik Visweswaran <kartikv2@gmail.com>
+ * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@frontend';
-    public $baseUrl = '@web/frontend/assets';
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
     public $css = [
         'css/site.css',
     ];
