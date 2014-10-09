@@ -131,7 +131,7 @@ the installed application. You only need to do these once for all.
 3. Apply migrations with console command `yii migrate`. This will create tables needed for the application to work.
 4. Set document roots of your Web server:
 
-- for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend/`
+- for frontend `/path/to/yii-application/` and using the URL `http://frontend/`
 - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
