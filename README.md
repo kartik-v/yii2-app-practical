@@ -54,76 +54,71 @@ DIRECTORY STRUCTURE
 -------------------
 
 ```
-ROOT
-    /                   contains the frontend entry script and web resources
-    /assets             contains the frontend web runtime assets
 common
-	config/				contains shared configurations
-	mail/				contains view files for e-mails
-	models/				contains model classes used in both backend and frontend
-	tests/				contains various tests for objects that are common among applications
+    config/              contains shared configurations
+    mail/                contains view files for e-mails
+    models/              contains model classes used in both backend and frontend
 console
-	config/				contains console configurations
-	controllers/		contains console controllers (commands)
-	migrations/			contains database migrations
-	models/				contains console-specific model classes
-	runtime/			contains files generated during runtime
-	tests/				contains various tests for the console application
+    config/              contains console configurations
+    controllers/         contains console controllers (commands)
+    migrations/          contains database migrations
+    models/              contains console-specific model classes
+    runtime/             contains files generated during runtime
 backend
-	assets/				contains application assets such as JavaScript and CSS
-	config/				contains backend configurations
-	controllers/		contains Web controller classes
-	models/				contains backend-specific model classes
-	runtime/			contains files generated during runtime
-	tests/				contains various tests for the backend application
-	views/				contains view files for the Web application
-	web/				contains the entry script and Web resources
+    assets/              contains application assets such as JavaScript and CSS
+    config/              contains backend configurations
+    controllers/         contains Web controller classes
+    models/              contains backend-specific model classes
+    runtime/             contains files generated during runtime
+    views/               contains view files for the Web application
+    web/                 contains the entry script and Web resources
 frontend
-	assets/				contains application assets such as JavaScript and CSS
-	config/				contains frontend configurations
-	controllers/		contains Web controller classes
-	models/				contains frontend-specific model classes
-	runtime/			contains files generated during runtime
-	tests/				contains various tests for the frontend application
-	views/				contains view files for the Web application
-vendor/					contains dependent 3rd-party packages
-environments/			contains environment-based overrides
+    assets/              contains application assets such as JavaScript and CSS
+    config/              contains frontend configurations
+    controllers/         contains Web controller classes
+    models/              contains frontend-specific model classes
+    runtime/             contains files generated during runtime
+    views/               contains view files for the Web application
+    web/                 contains the entry script and Web resources
+    widgets/             contains frontend widgets
+vendor/                  contains dependent 3rd-party packages
+environments/            contains environment-based overrides
+tests                    contains various tests for the "practical" application
+    codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
 
 
 REQUIREMENTS
 ------------
 
-The minimum requirement by this application template is that your Web server supports PHP 5.4.0.
+The minimum requirement by this application template that your Web server supports PHP 5.4.0.
 
 
 INSTALLATION
 ------------
 
+### Install from an Archive File
+
+Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
+a directory named `practical` that is directly under the Web root.
+
+> Note: When using a archive file method, the vendor folder is not automatically created. You must 
+ extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0-rc/yii-advanced-app-2.0.0-rc.tgz).
+ Then you must copy this folder directly under the app root (i.e. `practical` directory).
+  
+After this is complete, follow the instructions given in "GETTING STARTED".
+
 ### Install via Composer
 
-The preferred way to install this application template is through [composer](http://getcomposer.org/download/). 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
 You can then install the application using the following command:
 
 ~~~
+php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta2"
 php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical practical
 ~~~
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [GitHub](https://github.com/kartik-v/yii2-app-practical) to
-a directory named `practical` or your app name, that is directly under the Web root.
-
-> Note: When using a archive file method, the vendor folder is not automatically created. You must 
- extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0-beta/yii-advanced-app-2.0.0-beta.tgz).
- Then you must copy this folder directly under the app root (i.e. `practical` directory).
- 
-After this is complete, follow the instructions given in "GETTING STARTED".
-
-
 
 GETTING STARTED
 ---------------
@@ -136,10 +131,8 @@ the installed application. You only need to do these once for all.
 3. Apply migrations with console command `yii migrate`. This will create tables needed for the application to work.
 4. Set document roots of your Web server:
 
-- for frontend `/path/to/yii-application/` and using the URL `http://frontend/`
+- for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend/`
 - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
-
-> FRONTEND ACCESS: Just navigate to <code>http://yourdomain/practical</code> (where <code>practical</code> is your app name folder under web root).
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
@@ -172,3 +165,5 @@ After that is done you should be able to run your tests, for example to run `fro
 In similar way you can run tests for other application tiers - `backend`, `console`, `common`.
 
 You also can adjust you application suite configs and `_bootstrap.php` settings to use other urls and files, as it is can be done in `yii2-basic`.
+
+Follow the [`tests` section README](https://github.com/kartik-v/yii2-app-practical/tree/master/tests/README.md) for further details on setting up the tests.
