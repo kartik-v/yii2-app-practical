@@ -54,7 +54,7 @@ DIRECTORY STRUCTURE
 -------------------
 
 ```
-ROOT
+/
     /                  contains the frontend entry script, favicon, and robots.txt.
     /assets            contains the frontend web runtime assets
 common
