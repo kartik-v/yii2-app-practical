@@ -55,8 +55,8 @@ DIRECTORY STRUCTURE
 
 ```
 /
-    /                  contains the frontend entry script, favicon, and robots.txt.
-    /assets            contains the frontend web runtime assets
+    .                    contains the frontend entry script, favicon, and robots.txt.
+    assets               contains the frontend web runtime assets
 common
     config/              contains shared configurations
     mail/                contains view files for e-mails
