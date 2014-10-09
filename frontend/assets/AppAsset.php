@@ -11,6 +11,7 @@ use yii\web\AssetBundle;
 
 /**
  * @author Qiang Xue <qiang.xue@gmail.com>
+ * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 2.0
  */
 class AppAsset extends AssetBundle
