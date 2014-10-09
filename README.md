@@ -69,7 +69,7 @@ console
     models/              contains console-specific model classes
     runtime/             contains files generated during runtime
 backend
-    assets/              contains application assets such as JavaScript and CSS
+    assets/              contains backend application assets such as JavaScript and CSS
     config/              contains backend configurations
     controllers/         contains Web controller classes
     models/              contains backend-specific model classes
