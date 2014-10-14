@@ -1,6 +1,6 @@
 v1.2.0
 ------
-2014-08-09: Version 1.1.0. 
+2014-08-09: Version 1.2.0. 
 
 - Based on latest yii2-advanced-app until 09-Oct-2014.
 
