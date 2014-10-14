@@ -1,3 +1,10 @@
+v1.3.0
+------
+**Date:** 2014-08-14
+
+- Based on latest yii2-advanced-app until 14-Oct-2014.
+- (enh # 6): Easier AppAsset baseUrl setting
+
 v1.2.0
 ------
 **Date:** 2014-08-09
