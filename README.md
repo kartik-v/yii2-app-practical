@@ -105,7 +105,7 @@ Extract the archive file downloaded from [yiiframework.com](http://www.yiiframew
 a directory named `practical` that is directly under the Web root.
 
 > Note: When using a archive file method, the vendor folder is not automatically created. You must 
- extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0-rc/yii-advanced-app-2.0.0-rc.tgz).
+ extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0/yii-advanced-app-2.0.0.tgz).
  Then you must copy this folder directly under the app root (i.e. `practical` directory).
   
 After this is complete, follow the instructions given in "GETTING STARTED".
