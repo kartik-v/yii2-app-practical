@@ -139,6 +139,8 @@ the installed application. You only need to do these once for all.
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
 
+5. Edit the config files as needed. Especially set the correct paths for the user identity cookie in `backend/config/main-local.php`.
+
 TESTING
 -------
 
