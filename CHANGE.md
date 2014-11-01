@@ -3,8 +3,9 @@ v1.4.0
 **Date:** 2014-10-25
 
 - Based on latest yii2-advanced-app until 25-Oct-2014.
-- (enh # 8): Included CSRF token cookie setting for backend.
 - (enh # 9): Included identity cookie settings for backend.
+- (enh # 10): Included CSRF token cookie setting for backend.
+- (enh # 11): Update codeception default settings for tests
 
 
 v1.3.0
