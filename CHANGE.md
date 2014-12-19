@@ -1,3 +1,9 @@
+v1.5.0
+------
+**Date:** 2014-12-19
+
+- Based on latest yii2-advanced-app until 19-Dec-2014.
+
 v1.4.0
 ------
 **Date:** 2014-10-25

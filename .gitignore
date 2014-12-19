@@ -28,8 +28,3 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
-
-# bootstrap files
-/index.php
-/index-test.php
-
