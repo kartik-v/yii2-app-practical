@@ -1,3 +1,9 @@
+v1.6.0
+------
+**Date:** 2015-01-07
+
+- (enh #13): Improve security for .htaccess.
+
 v1.5.0
 ------
 **Date:** 2014-12-19
