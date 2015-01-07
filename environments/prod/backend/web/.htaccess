@@ -25,7 +25,7 @@
 # Block access to backup and source files
 # This files may be left by some text/html editors and
 # pose a great security danger, when someone can access them
-<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+<FilesMatch "(\.(bak|bat|config|sql|fla|md|psd|ini|log|sh|inc|swp|dist)|~|init|composer\.json|composer\.lock)$">
   Order allow,deny
   Deny from all
   Satisfy All
