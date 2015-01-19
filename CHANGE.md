@@ -1,8 +1,9 @@
 v1.6.0
 ------
-**Date:** 2015-01-07
+**Date:** 2015-01-19
 
 - (enh #13): Improve security for .htaccess.
+- (bug #14): Set correct writable folders.
 
 v1.5.0
 ------
