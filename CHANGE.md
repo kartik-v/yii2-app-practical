@@ -1,18 +1,22 @@
-v1.6.0
-------
-**Date:** 2015-01-19
+Change Log: `yii2-app-practical`
+================================
+
+## Version 1.5.1
+
+**Date:** 2015-07-29
 
 - (enh #13): Improve security for .htaccess.
-- (bug #14): Set correct writable folders.
+- (bug #14): Set correct writable folders
+- Based on latest yii2-advanced-app until 29-Jul-2015.
 
-v1.5.0
-------
+## Version 1.5.0
+
 **Date:** 2014-12-19
 
 - Based on latest yii2-advanced-app until 19-Dec-2014.
 
-v1.4.0
-------
+## Version 1.4.0
+
 **Date:** 2014-10-25
 
 - Based on latest yii2-advanced-app until 25-Oct-2014.
@@ -21,30 +25,30 @@ v1.4.0
 - (enh # 11): Update codeception default settings for tests
 
 
-v1.3.0
-------
+## Version 1.3.0
+
 **Date:** 2014-08-14
 
 - Based on latest yii2-advanced-app until 14-Oct-2014.
 - (enh # 6): Easier AppAsset baseUrl setting
 
-v1.2.0
-------
+## Version 1.2.0
+
 **Date:** 2014-08-09
 
 - Based on latest yii2-advanced-app until 09-Oct-2014.
 - (enh #4): User model findIdentity() does not take into account user status.
 
-v1.1.0
-------
+## Version 1.1.0
+
 **Date:** 2014-06-30
 
 - Based on latest yii2-advanced-app until 30-Jun-2014.
 - Included `.htaccess` for backend.
 
 
-v1.0.0
-------
+## Version 1.0.0
+
 **Date:** 2014-06-01
 
 - Initial release. 

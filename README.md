@@ -1,5 +1,5 @@
-Yii 2 Practical Application Template
-====================================
+Yii 2 Practical Project Template
+================================
 
 [![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-app-practical/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-app-practical) 
 [![License](https://poser.pugx.org/kartik-v/yii2-app-practical/license.svg)](https://packagist.org/packages/kartik-v/yii2-app-practical)
@@ -7,7 +7,7 @@ Yii 2 Practical Application Template
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-app-practical/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-app-practical)
 [![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-app-practical/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-app-practical)
 
-Yii 2 Practical Application Template is a skeleton Yii 2 application based on the 
+Yii 2 Practical Project Template is a skeleton Yii 2 application based on the 
 [yii2-advanced template](https://github.com/yiisoft/yii2-app-advanced/) best for 
 developing complex Web applications with multiple tiers. The template allows a 
 **practical** method to directly access the frontend from the app root.
@@ -21,7 +21,7 @@ deploying the application in different environments.
 Why yii2-practical?
 -------------------
 
-After installing a `app`, in the yii2-advanced application you normally would access the
+After installing an `app` in the yii2-advanced application you normally would access the
 frontend by:
 
 ```
@@ -107,16 +107,7 @@ The minimum requirement by this application template that your Web server suppor
 INSTALLATION
 ------------
 
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `practical` that is directly under the Web root.
-
-> Note: When using a archive file method, the vendor folder is not automatically created. You must 
- extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0/yii-advanced-app-2.0.0.tgz).
- Then you must copy this folder directly under the app root (i.e. `practical` directory).
-  
-After this is complete, follow the instructions given in "GETTING STARTED".
+You can choose to install the application using one of the following methods.
 
 ### Install via Composer
 
@@ -126,9 +117,17 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install the application using the following command:
 
 ~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta2"
+php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
 php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical practical
 ~~~
+
+### Install from an Archive File
+
+Download the [archive file](https://github.com/kartik-v/yii2-app-practical/archive/master.zip) directly to a directory named `practical` that is directly under the Web root.
+
+> Note: When using a archive file method, the vendor folder is not automatically created. You must download the [latest yii2-advanced archive](https://github.com/yiisoft/yii2/releases/download/2.0.5/yii-advanced-app-2.0.5.tgz) and then extract the vendor folder from here. Then you must copy this folder directly under the app root (i.e. `practical` directory).
+  
+After this is complete, follow the instructions given in "GETTING STARTED".
 
 GETTING STARTED
 ---------------
@@ -149,13 +148,20 @@ Then, you can login into the application with same email address and password at
 
 5. Edit the config files as needed. Especially set the correct paths for the user identity cookie in `backend/config/main-local.php`.
 
+MORE DOCUMENTATION
+------------------
+
+You can read the [yii2-advanced application guide](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/README.md) to understand details on working with the advanced application.
+
 TESTING
 -------
 
-Install additional composer packages:
-* `php composer.phar require --dev "codeception/codeception: 1.8.*@dev" "codeception/specify: *" "codeception/verify: *"`
+Follow the [`tests` section README](https://github.com/kartik-v/yii2-app-practical/tree/master/tests/README.md) for setting up the tests. For details of testing in Yii 2.0, read the [testing overview and setup](http://www.yiiframework.com/doc-2.0/guide-test-overview.html) within the Yii 2.0 Guide. Setting up the testing environment broadly involves the following steps.
 
-This application boilerplate use database in testing, so you should create three databases that are used in tests:
+Install additional composer packages:
+* `php composer.phar require --dev "codeception/codeception: 2.0" "codeception/specify: *" "codeception/verify: *"`
+
+This application boilerplate uses database in testing, so you should create three databases that are used in tests:
 * `yii2_practical_unit` - database for unit tests;
 * `yii2_practical_functional` - database for functional tests;
 * `yii2_practical_acceptance` - database for acceptance tests.
@@ -176,6 +182,4 @@ After that is done you should be able to run your tests, for example to run `fro
 
 In similar way you can run tests for other application tiers - `backend`, `console`, `common`.
 
-You also can adjust you application suite configs and `_bootstrap.php` settings to use other urls and files, as it is can be done in `yii2-basic`.
-
-Follow the [`tests` section README](https://github.com/kartik-v/yii2-app-practical/tree/master/tests/README.md) for further details on setting up the tests.
+You can also adjust you application suite configs and `_bootstrap.php` settings to use other urls and files, as it is done in `yii2-basic`.
