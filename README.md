@@ -125,7 +125,7 @@ php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app
 
 Download the [archive file](https://github.com/kartik-v/yii2-app-practical/archive/master.zip) directly to a directory named `practical` that is directly under the Web root.
 
-> Note: When using a archive file method, the vendor folder is not automatically created. You must download the [latest yii2-advanced archive](https://github.com/yiisoft/yii2/releases/download/2.0.5/yii-advanced-app-2.0.5.tgz) and then extract the vendor folder from here. Then you must copy this folder directly under the app root (i.e. `practical` directory).
+> Note: When using a archive file method, the vendor folder is not automatically created. You must download the [latest yii2-advanced archive](https://github.com/yiisoft/yii2/releases/download/2.0.6/yii-advanced-app-2.0.6.tgz) and then extract the vendor folder from here. Then you must copy this folder directly under the app root (i.e. `practical` directory).
   
 After this is complete, follow the instructions given in "GETTING STARTED".
 

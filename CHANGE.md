@@ -11,6 +11,7 @@ Change Log: `yii2-app-practical`
 - (bug #15): Fix `gii` console config for backend prod.
 - (enh #16): Include index files in `.gitignore`.
 - Upgrade migrations as per yii 2.0.6 Schema builder.
+- Update to use yii 2.0.6 archive.
 
 ## Version 1.5.0
 
