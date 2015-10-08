@@ -3,7 +3,7 @@ Change Log: `yii2-app-practical`
 
 ## Version 1.5.1
 
-**Date:** 2015-09-06
+**Date:** 2015-10-08
 
 - (enh #13): Improve security for .htaccess.
 - (bug #14): Set correct writable folders
@@ -14,6 +14,7 @@ Change Log: `yii2-app-practical`
 - Update to use yii 2.0.6 archive.
 - Update sessions configuration for frontend and backend.
 - Include `urlManagerFE` component in backend config to enable access to frontend routes.
+- (bug #17): Writable sessions save path.
 
 ## Version 1.5.0
 
