@@ -3,7 +3,7 @@ Change Log: `yii2-app-practical`
 
 ## Version 1.5.1
 
-**Date:** 2015-10-08
+**Date:** 2016-04-08
 
 - (enh #13): Improve security for .htaccess.
 - (bug #14): Set correct writable folders

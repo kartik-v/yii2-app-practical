@@ -57,6 +57,7 @@ SOME KEY ADDITIONS
 3. The template has isolated cookie settings for backend and frontend so that you can seamlessly access frontend and backend from same client. 
    The config files includes special `identity` and `csrf` cookie parameter settings for backend. Edit it according to your needs if necessary.
 
+Detailed documentation on yii2-app-advanced concepts and usage can be referred at [docs/guide/README.md](docs/guide/README.md).
 
 DIRECTORY STRUCTURE
 -------------------
@@ -117,7 +118,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install the application using the following command:
 
 ~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
+php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
 php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical practical
 ~~~
 
