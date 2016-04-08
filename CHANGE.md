@@ -7,7 +7,6 @@ Change Log: `yii2-app-practical`
 
 - (enh #13): Improve security for .htaccess.
 - (bug #14): Set correct writable folders
-- Based on latest yii2-advanced-app until 29-Jul-2015.
 - (bug #15): Fix `gii` console config for backend prod.
 - (enh #16): Include index files in `.gitignore`.
 - Upgrade migrations as per yii 2.0.6 Schema builder.
@@ -15,6 +14,7 @@ Change Log: `yii2-app-practical`
 - Update sessions configuration for frontend and backend.
 - Include `urlManagerFE` component in backend config to enable access to frontend routes.
 - (bug #17): Writable sessions save path.
+- Based on latest yii2-advanced-app until 08-Apr-2016.
 
 ## Version 1.5.0
 
