@@ -11,15 +11,15 @@ Si no tienes [Composer](http://getcomposer.org/), sigue las instrucciones en la 
 
 Con Composer instalado, puedes entonces instalar la aplicación usando los siguientes comandos:
 
-    composer global require "fxp/composer-asset-plugin:~1.1.1"
-    composer create-project --prefer-dist yiisoft/yii2-app-advanced yii-application
+    composer global require "fxp/composer-asset-plugin:^1.3.1"
+    composer create-project --prefer-dist yiisoft/yii2-app-practical practical
 
-El primer comando instala el [composer asset plugin](https://github.com/francoispluchino/composer-asset-plugin/) el cual permite el manejo de los paquetes de dependencias bower y npm a través de Composer. Sólo necesitas ejecutar este comando la primera vez. El segundo comando instala la aplicación avanzada en un directorio nombrado `yii-application`.
+El primer comando instala el [composer asset plugin](https://github.com/francoispluchino/composer-asset-plugin/) el cual permite el manejo de los paquetes de dependencias bower y npm a través de Composer. Sólo necesitas ejecutar este comando la primera vez. El segundo comando instala la aplicación avanzada en un directorio nombrado `practical`.
 Puedes elegir un nombre de directorio diferente si tu quieres.
 
 ## Instalación desde un Archivo
 
-Extrae el archivo descargado desde [yiiframework.com](http://www.yiiframework.com/download/) a directorio nombrado `advanced` que está directamente bajo el Web root.
+Extrae el archivo descargado desde [yiiframework.com](http://www.yiiframework.com/download/) a directorio nombrado `practical` que está directamente bajo el Web root.
 
 A continuación sigue las siguientes instrucciones dadas en la siguiente sub-sección.
 
@@ -31,13 +31,13 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 1. Ejecuta el comando `init` y selecciona `dev` como entorno.
 
    ```
-   php /path/to/yii-application/init
+   php /path/to/practical/init
    ```
 
    Por otra parte, en producción ejecuta `init` con el modo no interactivo.
 
    ```
-   php /path/to/yii-application/init --env=Production --overwrite=All
+   php /path/to/practical/init --env=Production --overwrite=All
    ```
 
 2. Crea una nueva base de datos y ajusta la configuración de `components['db']` en `common/config/main-local.php` como corresponde.
@@ -46,17 +46,17 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 
 4. Establece los documentos raíces(document-root) de tu servidor web:
 
-   - para frontend `/path/to/yii-application/frontend/web/` y usando la URL `http://frontend.dev/`
-   - para backend `/path/to/yii-application/backend/web/` y usando la URL `http://backend.dev/`
+   - para frontend `/path/to/practical/` y usando la URL `http://frontend.dev/`
+   - para backend `/path/to/practical/backend/web/` y usando la URL `http://backend.dev/`
 
    Para Apache podría ser lo siguiente:
 
    ```apache
        <VirtualHost *:80>
            ServerName frontend.dev
-           DocumentRoot "/path/to/yii-application/frontend/web/"
+           DocumentRoot "/path/to/practical/frontend/"
 
-           <Directory "/path/to/yii-application/frontend/web/">
+           <Directory "/path/to/practical/frontend/">
                # use mod_rewrite for pretty URL support
                RewriteEngine on
                # If a directory or a file exists, use the request directly
@@ -74,9 +74,9 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 
        <VirtualHost *:80>
            ServerName backend.dev
-           DocumentRoot "/path/to/yii-application/backend/web/"
+           DocumentRoot "/path/to/practical/backend/web/"
 
-           <Directory "/path/to/yii-application/backend/web/">
+           <Directory "/path/to/practical/backend/web/">
                # use mod_rewrite for pretty URL support
                RewriteEngine on
                # If a directory or a file exists, use the request directly
@@ -104,15 +104,15 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
            #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
 
            server_name frontend.dev;
-           root        /path/to/yii-application/frontend/web/;
+           root        /path/to/practical/frontend/;
            index       index.php;
 
-           access_log  /path/to/yii-application/log/frontend-access.log;
-           error_log   /path/to/yii-application/log/frontend-error.log;
+           access_log  /path/to/practical/log/frontend-access.log;
+           error_log   /path/to/practical/log/frontend-error.log;
 
            location / {
                # Redirect everything that isn't a real file to index.php
-               try_files $uri $uri/ /index.php?$args;
+               try_files $uri $uri/ /index.php$is_args$args;
            }
 
            # uncomment to avoid processing of calls to non-existing static files by Yii
@@ -123,7 +123,7 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 
            location ~ \.php$ {
                include fastcgi_params;
-               fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+               fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
                fastcgi_pass   127.0.0.1:9000;
                #fastcgi_pass unix:/var/run/php5-fpm.sock;
                try_files $uri =404;
@@ -142,15 +142,15 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
            #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
 
            server_name backend.dev;
-           root        /path/to/yii-application/backend/web/;
+           root        /path/to/practical/backend/web/;
            index       index.php;
 
-           access_log  /path/to/yii-application/log/backend-access.log;
-           error_log   /path/to/yii-application/log/backend-error.log;
+           access_log  /path/to/practical/log/backend-access.log;
+           error_log   /path/to/practical/log/backend-error.log;
 
            location / {
                # Redirect everything that isn't a real file to index.php
-               try_files $uri $uri/ /index.php?$args;
+               try_files $uri $uri/ /index.php$is_args$args;
            }
 
            # uncomment to avoid processing of calls to non-existing static files by Yii
@@ -161,7 +161,7 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 
            location ~ \.php$ {
                include fastcgi_params;
-               fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+               fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
                fastcgi_pass   127.0.0.1:9000;
                #fastcgi_pass unix:/var/run/php5-fpm.sock;
                try_files $uri =404;

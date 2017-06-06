@@ -15,6 +15,7 @@ Yii 2 アドバンストプロジェクトテンプレートは、複数の層�
 * [インストール](start-installation.md)
 * [ベーシックプロジェクトテンプレートとの違い](start-comparison.md)
 * [Composer を構成する](start-composer.md)
+* [テストを実行する](start-testing.md)
 
 構造
 ----
@@ -29,3 +30,5 @@ Yii 2 アドバンストプロジェクトテンプレートは、複数の層�
 
 * [バックエンドからフロントエンドへのリンクを作成する](topic-link-backend-frontend.md)
 * [アプリケーションをさらに追加する](topic-adding-more-apps.md)
+* [共有ホスティング環境でアドバンストプロジェクトテンプレートを使う](topic-shared-hosting.md)
+

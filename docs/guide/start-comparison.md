@@ -1,10 +1,10 @@
 Comparison
 ==========
 
-The following table compares the difference between the advanced and the basic project templates:
+The following table compares the difference between the practical and the basic project templates:
 
 
-| Feature  |  Basic  |  Advanced |
+| Feature  |  Basic  |  Practical |
 |---|:---:|:---:|
 | Project structure | ✓ | ✓ |
 | Site controller | ✓ | ✓ |

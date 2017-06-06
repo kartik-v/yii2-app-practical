@@ -35,11 +35,11 @@ return [
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
-            'frontend/web/assets',
+            'frontend/assets',
         ],
         'setExecutable' => [
             'yii',
-            'tests/codeception/bin/yii',
+            'yii_test',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
@@ -52,7 +52,7 @@ return [
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
-            'frontend/web/assets',
+            'frontend/assets',
         ],
         'setExecutable' => [
             'yii',

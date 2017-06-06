@@ -1,7 +1,7 @@
-Yii 2 Advanced Project Template
-===============================
+Yii 2 Practical Project Template
+================================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+Yii 2 Practical Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
 
 The template includes three tiers: front end, back end, and console, each of which
@@ -19,6 +19,7 @@ Getting Started
 * [Installation](start-installation.md)
 * [Difference from basic project template](start-comparison.md)
 * [Configuring Composer](start-composer.md)
+* [Running Tests](start-testing.md)
 
 Structure
 ---------
@@ -33,3 +34,4 @@ Additional Topics
 
 * [Creating links from backend to frontend](topic-link-backend-frontend.md)
 * [Adding more applications](topic-adding-more-apps.md)
+* [Using practical project template at shared hosting](topic-shared-hosting.md)

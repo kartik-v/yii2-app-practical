@@ -29,14 +29,11 @@ phpunit.phar
 # local phpunit config
 /phpunit.xml
 
-# backend runtime
-/backend/runtime
-
-# frontend runtime
-/frontend/runtime
-
-# backend assets cache
+# backend files
 /backend/assets
 
-# frontend assets cache
-/frontend/assets
+# frontend files
+/assets
+/index.php
+/index-test.php
+/robots.txt

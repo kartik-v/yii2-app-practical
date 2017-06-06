@@ -1,5 +1,5 @@
-| Question      | Answer
-| ------------- | -------------
+| Q             | A
+| ------------- | ---
 | Is bugfix?    | yes/no
 | New feature?  | yes/no
 | Breaks BC?    | yes/no

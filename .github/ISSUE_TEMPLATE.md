@@ -1,13 +1,14 @@
 ### What steps will reproduce the problem?
 
-### What is expected?
+### What's expected?
 
 ### What do you get instead?
 
+
 ### Additional info
 
-| Question         | Answer
-| ---------------- | ----------------
-| Yii version      |
+| Q                | A
+| ---------------- | ---
+| Yii vesion       |
 | PHP version      |
 | Operating system |
